@@ -4,7 +4,6 @@ from stable_baselines3 import PPO
 import os
 import time
 from gym.envs.registration import register
-# from gymnasium.envs.registration import register
 import numpy as np
 from matplotlib import pyplot as plt
 import datetime
@@ -20,7 +19,6 @@ register(id='Relocate-v1',
         entry_point='relocate_v1:RelocateEnvV1',
         max_episode_steps=500,
         kwargs={
-            #路径更换设备需要重设置一下
             'model_path': r'C:\Users\user\anaconda3\envs\myo\Lib\site-packages\myosuite\envs\myo\assets\arm\myoarm_relocate_v1.xml',
             'normalize_act': True,
             'frame_skip': 5,
@@ -39,9 +37,9 @@ env.reset()
 env.seed(seed)
 env.sim.renderer.set_free_camera_settings()
 
-#当前时间
+
 nowtime = datetime.datetime.now().strftime('%Y-%m-%d-%H-%M')
-#模型存储路径、tensorboard存储路径、训练测试结果路径
+
 model_dir = os.path.join(current_dir, f"models/PPO-seed-{seed}-Time-{nowtime}")
 loggir_dir = os.path.join(current_dir, f"logs/PPO-seed-{seed}-Time-{nowtime}")
 train_test_dir = os.path.join(current_dir, f"train_test/PPO-seed-{seed}-Time-{nowtime}")
@@ -49,13 +47,6 @@ train_test_dir = os.path.join(current_dir, f"train_test/PPO-seed-{seed}-Time-{no
 os.makedirs(model_dir, exist_ok=True)
 os.makedirs(loggir_dir, exist_ok=True)
 os.makedirs(train_test_dir, exist_ok=True)
-
-
-# 收敛最好
-# policy_kwargs = dict(activation_fn=th.nn.Tanh,
-#                         net_arch=dict(pi=[256, 512, 256], 
-#                         vf=[256, 512, 256]),,policy_kwargs=policy_kwargs
-#                         share_features_extractor=True)
 
 model = PPO("MlpPolicy", env, verbose=1, tensorboard_log=loggir_dir, seed=seed)
 
