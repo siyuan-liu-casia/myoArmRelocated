@@ -2,7 +2,7 @@
 
 Move the box into the red target ball located in front of the chest.
 
-This is a custom environment developed based on ![myosuite](https://github.com/MyoHub/myosuite).
+This is a custom environment developed based on [myosuite](https://github.com/MyoHub/myosuite).
 
 ![环境](https://picgo-liusiyuan.oss-cn-beijing.aliyuncs.com/picgo-lsy/202409081807645.png)
 
