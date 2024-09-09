@@ -1,7 +1,7 @@
 """ =================================================
 # Copyright (c) Facebook, Inc. and its affiliates. Institute of automation, Chinese Academy of Science
 Authors: Vikash Kumar (vikashplus@gmail.com), Vittorio Caggiano (caggiano@gmail.com), Liu siyuan(liusiyuan2023@ia.ac.cn)
-2024.4.13 举升物体到目标位置
+2024.4.13
 ================================================= """
 import collections
 import numpy as np
