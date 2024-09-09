@@ -6,7 +6,7 @@ Move the box into the red target ball located in front of the chest.
 
 ## Environment Setup
 
-(Since this task is not included in myosuite, you need to configure the simulation files for the task.)
+(Since this task is not included in myosuite, you need to configure the simulation files for the task in your conda env.)
 
 1.Copy the arm folder to C:\Users\user\anaconda3\envs\myo\Lib\site-packages\myosuite\envs\myo\assets, which is located in the assets directory of the myosuite package in your conda environment.
 
