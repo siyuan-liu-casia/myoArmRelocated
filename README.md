@@ -3,7 +3,9 @@
 Move the box into the red target ball located in front of the chest.
 
 
-https://github.com/user-attachments/assets/2dfdc695-afa3-47b4-9973-f212c545b3d2
+
+https://github.com/user-attachments/assets/7b2c7046-9f85-4a79-bbf0-105da43b5d1e
+
 
 
 ![环境](https://picgo-liusiyuan.oss-cn-beijing.aliyuncs.com/picgo-lsy/202409081807645.png)
