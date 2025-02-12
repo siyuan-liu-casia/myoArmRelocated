@@ -10,11 +10,11 @@ This is a custom environment developed based on [myosuite](https://github.com/My
 
 (Since this task is not included in myosuite, you need to configure the simulation files for the task in your conda env.)
 
-1.Copy the arm folder to C:\Users\user\anaconda3\envs\myo\Lib\site-packages\myosuite\envs\myo\assets, which is located in the assets directory of the myosuite package in your conda environment.
+1.Copy the arm folder to \myosuite\envs\myo\assets, which is located in the assets directory of the myosuite package in your conda environment.
 
-2.Copy the assets folder to C:\Users\user\anaconda3\envs\myo\Lib\site-packages\myosuite\simhive\myo_sim\arm, which is in the myo_sim\arm directory of the myosuite package in your conda environment.
+2.Copy the assets folder to \myosuite\simhive\myo_sim\arm, which is in the myo_sim\arm directory of the myosuite package in your conda environment.
 
-3.In the register function, set the model_path to the XML file path from step 1: C:\Users\user\anaconda3\envs\myo\Lib\site-packages\myosuite\envs\myo\assets\arm\myoarm_relocate_v1.xml.
+3.In the register function, set the model_path to the XML file path from step 1: \myosuite\envs\myo\assets\arm\myoarm_relocate_v1.xml.
 
 ## **Environment Testing**
 
